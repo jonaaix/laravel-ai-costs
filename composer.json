@@ -1,0 +1,30 @@
+{
+   "name": "aaix/laravel-ai-costs",
+   "description": "Cost tracking for Laravel AI agents. Calculates API costs from usage metadata across providers.",
+   "type": "library",
+   "license": "MIT",
+   "authors": [
+      {
+         "name": "Jonas Gnioui",
+         "email": "jonaaix@icloud.com"
+      }
+   ],
+   "autoload": {
+      "psr-4": {
+         "Aaix\\LaravelAiCosts\\": "src/"
+      }
+   },
+   "require": {
+      "php": "^8.2",
+      "illuminate/support": ">=11.0",
+      "illuminate/http": ">=11.0",
+      "laravel/ai": "^0"
+   },
+   "extra": {
+      "laravel": {
+         "providers": [
+            "Aaix\\LaravelAiCosts\\Providers\\AiCostsServiceProvider"
+         ]
+      }
+   }
+}
