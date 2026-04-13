@@ -25,6 +25,9 @@
          "providers": [
             "Aaix\\LaravelAiCosts\\Providers\\AiCostsServiceProvider"
          ]
+      },
+      "branch-alias": {
+         "dev-main": "1.x-dev"
       }
    }
 }
