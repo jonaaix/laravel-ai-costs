@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/aaix/laravel-ai-costs">
-    <img src="https://raw.githubusercontent.com/aaix/laravel-ai-costs/main/docs/public/logo.webp" alt="Laravel AI Costs Logo" width="200">
+    <img src="https://jonaaix.github.io/laravel-ai-costs/logo.webp" alt="Laravel AI Costs Logo" width="200">
   </a>
 </p>
 

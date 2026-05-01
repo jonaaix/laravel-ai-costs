@@ -10,7 +10,7 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/webp', href: '/logo.webp' }],
+    ['link', { rel: 'icon', type: 'image/webp', href: '/laravel-ai-costs/logo.webp' }],
     ['meta', { name: 'theme-color', content: '#C8932F' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Laravel AI Costs' }],
@@ -18,7 +18,7 @@ export default defineConfig({
       property: 'og:description',
       content: 'Cost tracking for Laravel AI agents — calculate API costs from usage metadata across providers.',
     }],
-    ['meta', { property: 'og:image', content: '/logo.webp' }],
+    ['meta', { property: 'og:image', content: '/laravel-ai-costs/logo.webp' }],
   ],
 
   themeConfig: {
