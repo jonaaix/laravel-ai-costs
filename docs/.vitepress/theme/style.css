@@ -1,0 +1,49 @@
+/**
+ * Brand palette — pulled from the logo:
+ *   teal     #1A8C8C
+ *   blue     #1F3D7A
+ *   purple   #6B3FA0
+ *   gold     #C8932F (primary brand accent)
+ */
+
+:root {
+  --vp-c-brand-1: #C8932F;
+  --vp-c-brand-2: #B8841F;
+  --vp-c-brand-3: #8B5A0F;
+  --vp-c-brand-soft: rgba(200, 147, 47, 0.14);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #1A8C8C 0%, #6B3FA0 100%);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #1A8C8C 30%, #6B3FA0 70%);
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+.dark {
+  --vp-c-brand-1: #E0B055;
+  --vp-c-brand-2: #C8932F;
+  --vp-c-brand-3: #8B5A0F;
+  --vp-c-brand-soft: rgba(224, 176, 85, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #2DBFBF 0%, #9558D9 100%);
+}
+
+/* Soften the hero image glow behind the logo */
+.VPHero .VPImage {
+  border-radius: 24px;
+}

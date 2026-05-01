@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/aaix/laravel-ai-costs">
+    <img src="https://raw.githubusercontent.com/aaix/laravel-ai-costs/main/docs/public/logo.webp" alt="Laravel AI Costs Logo" width="200">
+  </a>
+</p>
+
 <h1 align="center">Laravel AI Costs</h1>
 
 <p align="center">

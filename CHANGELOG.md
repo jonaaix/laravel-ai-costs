@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-05-01
+
+### Added
+- VitePress documentation site under `docs/` with guide and API reference
+- Project logo (`resources/laravel-ai-costs.webp`) and README header
+- Custom VitePress theme matching the logo palette (gold accent, teal→purple gradient)
+- Laravel Boost skill at `resources/boost/skills/laravel-ai-costs-development/SKILL.md`
+
 ## [1.0.0] - 2026-04-11
 
 ### Added
