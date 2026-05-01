@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Laravel AI Costs',
   description: 'Cost tracking for Laravel AI agents — calculate API costs from usage metadata across providers.',
 
+  base: '/laravel-ai-costs/',
   cleanUrls: true,
   lastUpdated: true,
 
