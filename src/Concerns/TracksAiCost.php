@@ -6,6 +6,7 @@ namespace Aaix\LaravelAiCosts\Concerns;
 
 use Aaix\LaravelAiCosts\DTO\AiCostResult;
 use Aaix\LaravelAiCosts\Services\AiCostCalculator;
+use Laravel\Ai\Approvals\Decisions;
 use Laravel\Ai\Enums\Lab;
 use Laravel\Ai\Promptable;
 use Laravel\Ai\Responses\AgentResponse;
@@ -20,7 +21,7 @@ trait TracksAiCost
    protected array $aiCosts = [];
 
    public function prompt(
-      string $prompt,
+      Decisions|string $prompt,
       array $attachments = [],
       Lab|array|string|null $provider = null,
       ?string $model = null,
@@ -28,7 +29,10 @@ trait TracksAiCost
    ): AgentResponse {
       $response = $this->promptWithoutTracking($prompt, $attachments, $provider, $model, $timeout);
 
-      $this->aiCosts[] = AiCostCalculator::fromResponse($response);
+      // Paused human-in-the-loop runs may return a response without model metadata.
+      if ($response->meta->model !== null) {
+         $this->aiCosts[] = AiCostCalculator::fromResponse($response);
+      }
 
       return $response;
    }

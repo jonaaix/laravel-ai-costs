@@ -12,7 +12,7 @@ Drop-in replacement for `Laravel\Ai\Promptable` that tracks an [`AiCostResult`](
 
 ```php
 public function prompt(
-    string $prompt,
+    \Laravel\Ai\Approvals\Decisions|string $prompt,
     array $attachments = [],
     \Laravel\Ai\Enums\Lab|array|string|null $provider = null,
     ?string $model = null,
@@ -20,7 +20,7 @@ public function prompt(
 ): \Laravel\Ai\Responses\AgentResponse
 ```
 
-Same signature as `Promptable::prompt()`. Forwards to the underlying implementation, then appends `AiCostCalculator::fromResponse($response)` to the internal cost buffer.
+Same signature as `Promptable::prompt()`. Forwards to the underlying implementation, then appends `AiCostCalculator::fromResponse($response)` to the internal cost buffer. Responses without model metadata (e.g. runs paused for human-in-the-loop tool approval) are not recorded.
 
 ## `lastCost()`
 
