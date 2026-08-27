@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-08-28
+
+### Changed
+- Allow `laravel/ai` `^0.11` alongside `^0.10`. v0.11 adds invocation and parent-invocation tracking inside `Promptable::prompt()`, but leaves the method signature and the `AgentResponse`, `Usage` and `Meta` shapes this package reads unchanged — no code changes were required
+
 ## [1.1.0] - 2026-07-24
 
 ### Fixed
