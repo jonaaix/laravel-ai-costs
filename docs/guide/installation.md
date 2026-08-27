@@ -4,7 +4,7 @@
 
 - PHP **8.2+**
 - Laravel **11** or **12**
-- [`laravel/ai`](https://github.com/laravel/ai) `^0`
+- [`laravel/ai`](https://github.com/laravel/ai) `^0.10 || ^0.11`
 
 ## Install via Composer
 
